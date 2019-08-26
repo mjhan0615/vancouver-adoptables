@@ -9,3 +9,5 @@ local_settings.py
 db.sqlite3
 media
 /van_adoptables/static/
+.DS_Store
+.vscode/

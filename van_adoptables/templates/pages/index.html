@@ -1,52 +1,51 @@
 {% extends 'base.html' %}
 {% block content %}
 <section id="showcase">
-    <div class="container text-center">
-        <div class="home-search p-5">
-            <div class="overlay p-5">
-                <h1 class="display-4 mb-4">
-                    Furry friends looking for their forever home
-                </h1>
-                <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quas, asperiores
-                    eveniet vel nostrum magnam
-                    voluptatum tempore! Consectetur, id commodi!</p>
-                <div class="search">
-                    <form action="search.html">
-                        <div class="form-row">
-                            <div class="col-md-4 mb-3">
-                                <label class="sr-only">Keywords</label>
-                                <input type="text" name="keywords" class="form-control"
-                                    placeholder="Keyword (Breed, Age, Shelter)">
-                            </div>
+  <div class="container text-center">
+    <div class="home-search p-5">
+      <div class="overlay p-5">
+        <h1 class="display-4 mb-4">
+          Furry friends looking for their forever home
+        </h1>
+        <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quas, asperiores
+          eveniet vel nostrum magnam
+          voluptatum tempore! Consectetur, id commodi!</p>
+        <div class="search">
+          <form action="search.html">
+            <div class="form-row">
+              <div class="col-md-4 mb-3">
+                <label class="sr-only">Keywords</label>
+                <input type="text" name="keywords" class="form-control" placeholder="Keyword (Breed, Age, Shelter)">
+              </div>
 
-                            <div class="col-md-4 mb-3">
-                                <select name="price" class="form-control" id="type">
-                                    <option selected="true" disabled="disabled">Max Price (Any)</option>
-                                    <option value="100">$100</option>
-                                    <option value="200">$200</option>
-                                    <option value="300">$300</option>
-                                    <option value="400">$400</option>
-                                    <option value="500">$500</option>
-                                </select>
-                            </div>
+              <div class="col-md-4 mb-3">
+                <select name="price" class="form-control" id="type">
+                  <option selected="true" disabled="disabled">Max Price (Any)</option>
+                  <option value="100">$100</option>
+                  <option value="200">$200</option>
+                  <option value="300">$300</option>
+                  <option value="400">$400</option>
+                  <option value="500">$500</option>
+                </select>
+              </div>
 
-                            <div class="col-md-4 mb-3">
-                                <label class="sr-only">Location</label>
-                                <select name="location" class="form-control">
-                                    <option selected="true" disabled="disabled">Location (All)</option>
-                                    <option value="coquitlam">Coquitlam</option>
-                                    <option value="burnaby">Burnaby</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <!-- TODO: add search options for breed, hypoallergenic -->
-
-                        <button class="btn btn-secondary btn-block mt-4" type="submit">Search</button>
-                    </form>
-                </div>
+              <div class="col-md-4 mb-3">
+                <label class="sr-only">Location</label>
+                <select name="location" class="form-control">
+                  <option selected="true" disabled="disabled">Location (All)</option>
+                  <option value="coquitlam">Coquitlam</option>
+                  <option value="burnaby">Burnaby</option>
+                </select>
+              </div>
             </div>
+
+            <!-- TODO: add search options for breed, hypoallergenic -->
+
+            <button class="btn btn-secondary btn-block mt-4" type="submit">Search</button>
+          </form>
         </div>
+      </div>
     </div>
+  </div>
 </section>
 {% endblock %}
